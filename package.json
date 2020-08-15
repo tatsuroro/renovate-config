@@ -1,0 +1,44 @@
+{
+  "name": "@tatsuroro/renovate-config",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "repository": "https://github.com/tatsuroro/renovate-config",
+  "author": "Tatsuro NAKAMURA<me@tatsuroro.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tatsuroro/renovate-config/issues"
+  },
+  "renovate-config": {
+    "default": {
+      "extends": [
+        ":separateMajorReleases",
+        ":combinePatchMinorReleases",
+        ":ignoreUnstable",
+        ":prImmediately",
+        ":semanticPrefixFixDepsChoreOthers",
+        ":updateNotScheduled",
+        ":autodetectPinVersions",
+        ":label(renovate)",
+        ":timezone(Asia/Tokyo)",
+        ":ignoreModulesAndTests",
+        ":prConcurrentLimit10",
+        ":preserveSemverRanges",
+        ":automergePatch",
+        "group:monorepos",
+        "group:recommended",
+        "docker:disable"
+      ],
+      "schedule": [
+        "before 9am on Monday"
+      ],
+      "assignees": [
+        "tatsuroro"
+      ]
+    }
+  },
+  "devDependencies": {
+    "renovate": "^22.17.2"
+  }
+}
