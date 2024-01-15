@@ -1,6 +1,6 @@
 {
   "name": "@tatsuroro/renovate-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "test": "renovate-config-validator"
   },
@@ -39,6 +39,6 @@
     }
   },
   "devDependencies": {
-    "renovate": "^25.0.0"
+    "renovate": "^34.0.0"
   }
 }
